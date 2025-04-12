@@ -1,0 +1,24 @@
+1. Creation du PlayerMouvement
+    -Expliquer qu'il faut faire un script par bail (principe SOLID)
+    -Creer le PlayerInput
+    -Creer les 4 Inputs
+    -Montrer comment relier 2 scripts
+    -Faire la methode du deplacement vers le haut
+    -Creer le script Player Stat
+    -Ajouter la vitesse
+    -Thomas relie les script et ajoute la vitesse a la fonction up puis les autre methode
+    -Ajouter la rotation du sprite parler vite fait des quaternion
+    
+2. Création du player Shoot
+    -Ajpouter l'input
+    -Lier les scripts
+    -Creer une prefab de la 1er weapon
+    -Créer la methode shoot de façon tres simple et expliquer pq c'est nul
+    -Implementer differentes armes
+    -Creer les 3 prefabs
+    -Creer les 4 scripts et expliquer l'heritage faire juste les dammahe, le projectile speed et la methpde shoot
+    -Modifier le script playerShoot
+    -Scripts de détection des Collision entre weapon et meteor
+    -Créer le script CollisionDetector
+    -Créer ou modifier le meteore base ou stats en fct de l'heure faire hériter ou pas
+    -Ajouter un effet pour chaque arme grace au polymorphisme

@@ -2,15 +2,31 @@ using UnityEngine;
 
 public class MeteorBase : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] int health = 20;
+
+    public int Health
     {
-        
+        get => health;
+        set => health = value;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void TakeDamage(int damage)
     {
-        
+        health -= damage;
+        CheckIfAlive();
     }
+
+    private void CheckIfAlive()
+    {
+        if (health <= 0)
+        {
+            DeathHandler();
+        }
+    }
+
+    private void DeathHandler()
+    {
+        Destroy(gameObject);
+    }
+    
 }
